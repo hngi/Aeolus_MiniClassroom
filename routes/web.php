@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::post('register', 'UserController@signUp')->name('register');
+Route::post('login', 'UserController@signIn');
+Route::post('logout', 'UserController@logOut');
+Route::group(['middleware'=>'auth:api'], function(){
+    Route::post('createclass', 'ClassroomController@createClass');
 });
