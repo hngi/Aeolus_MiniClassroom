@@ -7,6 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class Classroom extends Model
 {
     //
+    protected $table = 'classroom';
+    protected $fillable = [
+        'user_id',
+        'role_id',
+        'classroom'
+    ];
 
     public function userClassroom()
     {

@@ -16,8 +16,8 @@
 // });
 
 Route::post('register', 'UserController@signUp')->name('register');
-Route::post('login', 'UserController@signIn');
-Route::post('logout', 'UserController@logOut');
+Route::post('login', 'UserController@signIn')->name('login');
+Route::post('logout', 'UserController@logOut')->name('logout');
 Route::group(['middleware'=>'auth:api'], function(){
     Route::post('createclass', 'ClassroomController@createClass');
 });
