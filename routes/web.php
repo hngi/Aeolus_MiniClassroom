@@ -17,7 +17,7 @@
 
 Route::post('register', 'UserController@signUp')->name('register');
 Route::post('login', 'UserController@signIn')->name('login');
-Route::post('logout', 'UserController@logOut')->name('logout');
-Route::group(['middleware'=>'auth:api'], function(){
-    Route::post('createclass', 'ClassroomController@createClass');
-});
+// Route::post('logout', 'UserController@logOut')->name('logout');
+
+Route::post('createclass', 'ClassroomController@createClass')->name('createclass');
+Route::get('allcourses/{id}', 'ClassroomController@listAllCourseRooms')->name('allcourses');

@@ -4,10 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Classroom extends Model
+class Courseroom extends Model
 {
     //
-    public $table = 'classrooms';
+    protected $table = 'courserooms';
     protected $fillable = [
         'user_id',
         'role_id',
@@ -21,6 +21,6 @@ class Classroom extends Model
 
     public function classRoomCourses()
     {
-        return $this->hasMany('App\Classroom_items');
+        return $this->hasMany('App\Courseroomitems');
     }
 }

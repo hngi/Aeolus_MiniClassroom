@@ -15,6 +15,12 @@ class UserController extends Controller
 {
     //
 
+    /**
+     * @param [fullname, email, password, role];
+     * @return [status, message]
+     * @method signup
+     */
+
     public function signUp(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -49,15 +55,15 @@ class UserController extends Controller
             } catch (Exception $e) {
                 $e->getMessage();
             }
-       
 
-            
-           
         }
-       
-  
-
     }
+
+     /**
+     * @param [ email, password];
+     * @return [status, message]
+     * @method signin
+     */
 
     public function signIn(Request $request)
     {
@@ -73,7 +79,7 @@ class UserController extends Controller
         if(Auth::attempt(['email'=>$request->input('email'), 'password'=>$request->input('password')]))
         {
             $user = Auth::user();
-            return response()->json(['message'=>'Success', 'user'=>$user], 200);
+            return response()->json(['message'=>'Success', 'data'=>$user], 200);
         }else{
             return response()->json(['message'=>'Unauthorized'], 403);
         }
