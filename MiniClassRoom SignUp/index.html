@@ -9,14 +9,20 @@
 </head>
 <body>
     <div class="container">
+        <img src="back.png">
         <h1>Create Account</h2>
         <form>
-            <input type="text" placeholder="Name" name="name" required>
+            <select name="Account Type">
+                <option value="#">Account Type</option>
+                <option value="teachers">Teachers</option>
+                <option value="students">Students</option>
+            </select>
+            <input type="text" placeholder="Username" name="name" required>
             <input type="email" placeholder="Email" name="psw" required>
             <input type="password" placeholder="Password" name="psw" required>
         </form>
         <button type="button" class="sign-btn">Sign Up</button><br>
-        <p>By Clicking <span class="sign-color">Sign Up,</span> you agree to the <span class="terms">terms and privacy</span></p>
+        <p>By Clicking <span class="sign-color">Sign Up,</span> you agree to the <span class="terms">terms and privacy.</span></p>
         <p>Already have an Account? <a href="#"<span class="sign-color">Sign In</a></span></p>
     </div>
 </body>

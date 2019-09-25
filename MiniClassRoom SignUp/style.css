@@ -7,7 +7,7 @@ body{
 }
 
 .container{
-    width: 350px;
+    width: 400px;
     display: block;
     text-align: center;
     margin: 8% auto 0;
@@ -58,4 +58,22 @@ a{
 
 .terms{
     font-style: italic;
+}
+
+img{
+    padding-top: 15px;
+    height: 45%;
+    width: 40%;
+}
+
+select{
+    margin-bottom: 5%; 
+    width: 280px;
+    height: 45px;
+    background: #fcfcfc;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    text-indent: 20px;
+    outline: none;
+    margin-right: 70px;
 }
