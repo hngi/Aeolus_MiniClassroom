@@ -9,6 +9,7 @@ background-repeat: no-repeat;
 height: 100%;
 
 
+
 /* Vector */
 
 position: absolute;
@@ -29,6 +30,78 @@ height: 100%;
 align-content: center;
 }
 
+
+/* The container */
+.containerbutton {
+    display: block;
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+/* Hide the browser's default radio button */
+.containerbutton input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 30%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .containerbutton:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a grey background */
+  .containerbutton input:checked ~ .checkmark {
+    background-color: grey;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .containerbutton input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .containerbutton .checkmark:after {
+       top: 5px;
+      left: 5px;
+      width: 4px;
+      height: 4px;
+      border-radius: 30%;
+      background: white;
+  }
+
+
+
+
+
+
+
+
 .card{
 height: 370px;
 margin-top: auto;
@@ -39,7 +112,7 @@ background-color: rgba(0,0,0,0.5) !important;
 
 
 .social_icon span{
-font-size: 60px;
+font-size: 50px;
 margin-left: 10px;
 color: white;
 }
@@ -49,7 +122,7 @@ color: white;
 cursor: pointer;
 }
 
-.card-header h3{
+.card-header h5{
 color: white;
 }
 .social_icon{
@@ -85,7 +158,7 @@ margin-right: 5px;
 
 .login_btn{
 color: black;
-background-color: light blue;
+background-color: white;
 width: 100px;
 }
 
