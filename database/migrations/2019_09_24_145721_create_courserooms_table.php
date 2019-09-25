@@ -18,6 +18,7 @@ class CreateCourseroomsTable extends Migration
             $table->integer('user_id');
             $table->integer('role_id');
             $table->string('classroom');
+            $table->string('icon')->nullable();
             $table->timestamps();
         });
     }

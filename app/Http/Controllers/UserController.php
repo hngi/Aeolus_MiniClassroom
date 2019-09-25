@@ -79,7 +79,9 @@ class UserController extends Controller
         if(Auth::attempt(['email'=>$request->input('email'), 'password'=>$request->input('password')]))
         {
             $user = Auth::user();
-            return response()->json(['message'=>'Success', 'data'=>$user], 200);
+            $role_id = User_Role::findorfail($user->id);
+            $data = ['fullname'=>$user->fullname, 'role_id'=>$role_id->role_id, 'user_id'=>$user->id];
+            return response()->json(['message'=>'Success', 'status'=>200, 'data'=>$data], 200);
         }else{
             return response()->json(['message'=>'Unauthorized'], 403);
         }

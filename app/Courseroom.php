@@ -11,7 +11,8 @@ class Courseroom extends Model
     protected $fillable = [
         'user_id',
         'role_id',
-        'classroom'
+        'classroom',
+        'icon'
     ];
 
     public function userClassroom()

@@ -18,10 +18,12 @@ class CreateCourseitemsTable extends Migration
             $table->integer('user_id');
             $table->integer('role_id');
             $table->integer('courseroom_id');
-            $table->string('item_name');
-            $table->string('item_desc');
+            $table->string('media')->nullable();
+            $table->string('course_title')->nullable();
+            $table->string('course_desc')->nullable();
             $table->integer('duration')->default(0);
-            $table->integer('student_id');
+            $table->integer('student_id')->nullable();
+            $table->integer('joined')->default(0);
 
             $table->timestamps();
         });

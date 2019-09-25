@@ -21,3 +21,8 @@ Route::post('login', 'UserController@signIn')->name('login');
 
 Route::post('createclass', 'ClassroomController@createClass')->name('createclass');
 Route::get('allcourses/{id}', 'ClassroomController@listAllCourseRooms')->name('allcourses');
+Route::post('editcourse/{id}', 'ClassroomController@editCourseRoom')->name('editcourse');
+Route::post('removecourse/{id}', 'ClassroomController@deleteCourseRoom')->name('removecourse');
+Route::post('addcourseitems', 'ClassroomController@createCourseItem')->name('addcourseitems');
+
+Route::post('joinclass', 'StudentController@studentJoinCourseRoom')->name('joinclass');
