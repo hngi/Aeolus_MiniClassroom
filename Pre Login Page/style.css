@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100%;
+}
+
+.bg-image{
+    height: 700px;
+    background: url("background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+button{
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    outline: none;
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #0EAFF4;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    opacity: .7;
+}
+
+h1{
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    color: white;
+    font-size: 50px;
+}
