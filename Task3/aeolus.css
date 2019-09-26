@@ -1,0 +1,100 @@
+body{
+    padding-top: 10em;
+    text-align: center;
+    background: url(img.png);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    
+        
+}
+
+
+*/layout*/
+
+
+.container{
+width: 40%
+    
+}
+.header{
+    width: 25%;
+    margin: auto;
+    color: #ffff;
+    font-size: 1rem;
+    border: solid 1px #ffff;
+    border-radius: 10em;
+    text-align: center;
+    
+    
+}
+    
+ul.list{
+    margin: auto;
+    list-style-type: none;
+    width: 25em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    padding-right: 2em;
+    color: #ffff;
+    position: relative;
+
+}
+
+
+ul.list li input{
+    width: 50%;
+    height: 3%;
+    border: 1px;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    margin: 1em;
+    
+}
+
+.form{
+    width: 40em;
+    text-align: center;
+    color: #73c2fb;
+    margin: auto;
+    padding-top: 2em;
+}
+    
+   .checkbox{
+       margin: auto;
+       width: 28em;
+       text-align: center;
+       color: #73c2fb;
+       font-size: 0.6rem
+              
+    }
+      
+.button{
+    width: 50%;
+    margin: inherit;
+    display: inline-block;
+    padding-left: 1em;
+    padding-top: 2em;
+    text-align: match-parent;
+   
+}
+
+.save-button{
+    background: inherit;
+    color: #ffff;
+    width: 15%;
+    border: solid 1px #ffff;
+    border-radius: 10em;
+}
+
+    
+.cancel-button{
+    background: inherit;
+    color: #ffff;
+    width: 15%;
+    border: solid 1px #ffff;
+    border-radius: 10em;
+    
+    }
+    
+
