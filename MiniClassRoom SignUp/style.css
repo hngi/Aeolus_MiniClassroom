@@ -3,6 +3,8 @@
 }
 
 body{
+    background: url('back.png') center no-repeat;
+    width: 100%;
     background-color: #193039;
 }
 
@@ -60,12 +62,6 @@ a{
     font-style: italic;
 }
 
-img{
-    padding-top: 15px;
-    height: 45%;
-    width: 40%;
-}
-
 select{
     margin-bottom: 5%; 
     width: 280px;
@@ -77,3 +73,6 @@ select{
     outline: none;
     margin-right: 70px;
 }
+
+button:hover{
+    opacity: .7;
