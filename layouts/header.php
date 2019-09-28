@@ -14,10 +14,12 @@
 
 <!-- Navigation Start Here -->
 
+
+
 <body>
     <div class="container">
             <nav class="navbar navbar-expand-lg">
-               <a class="navbar-brand" href="#"><img src="https://res.cloudinary.com/kngkay/image/upload/v1569408433/kngkay/lll.png" alt=""></a>
+               <a class="navbar-brand" href="index.php"><img src="https://res.cloudinary.com/kngkay/image/upload/v1569408433/kngkay/lll.png" alt=""></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -25,52 +27,31 @@
                     <ul class="navbar-nav">
                         <p class="p1">Teach</p>
                         <p class="p2">Me</p>
-                 
+
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div id="name"></div>
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="#">Logout</a>
+                          </div>
+                        </li>
+                    </ul>
                   </div>
                 <!-- <p class="p3"><a href="#" data-toggle="modal" data-target="#exampleModalCenter">Login/Register</a></p> -->
             </nav>
 
 
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="modal-title text-center" id="exampleModalCenterTitle">Welcome To Aeolus-Miniclassroom</h3>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                            <h4 class="text-center">Login Here</h4>
-                            <div>
-                                <form action="">
-                                <div class="form-group row">
-                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                                    <div class="col-sm-10">
-                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email" value="">
-                                    </div>
-                                </div>
+<script>
+    const fullname = localStorage.getItem('fullname');
+    const role_id  = localStorage.getItem('role_id');
+    const user_id  = localStorage.getItem('user_id');
+    // console.log(user_id);
+    if(role_id == 1){
+        document.getElementById('name').innerHTML = fullname;
+    } 
+    if (role_id == 2){
+        document.getElementById('name').innerHTML = fullname;
+    }
 
-                                <div class="form-group row">
-                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                                    <div class="col-sm-10">
-                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password" value="">
-                                    </div>
-                                </div>
-                                    <div class="form-group row">
-                                        <div class="col-sm-2"></div>
-                                        <div class="col-sm-10">
-                                            <button class="btn btn-light" id="submit"><span>Sign-In</span></button> 
-                                        </div>
-                                       
-                                    </div>
-                                    
-                                </form>
-
-                            </div>
- 
-                    </div>
-
-                    </div>
-                </div>
-            </div>
+</script>

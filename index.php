@@ -13,9 +13,9 @@
         <div class="col-md-3"></div>
         <div class="col-md 6 ">
         <!-- <h2>Log in to your TeachMe Account!</h2> -->
-          <div class="panel panel-default mt-o">
-              <div class="panel-heading"><h3>Login Here</h3></div>
-              <div class="panel-body">
+          <div class="card mt-0">
+              <div class="card-header"><h3>Login Here</h3></div>
+              <div class="card-body">
 
               <form class="mt-auto">
             <div class="form">
@@ -89,15 +89,18 @@
               'Content-Type': 'application/json',
              },
                body: JSON.stringify({'email':emails, 'password':passwords})
-             }).then(response=>{
-                if(response.status == 200){
-                  console.log(response);
-                  window.location.href = "http://127.0.01/mini-classroom/welcome.php";
-                }
-             }).then(error=>{
-                console.log(error);
-             });
-          }catch(error){
+             })
+             .then((resp)=> resp.json())
+             .then((data)=>{
+               if(data.status == 200){
+                let result = data.data;
+                let fullname = localStorage.setItem('fullname',result.fullname);
+                let role_id  = localStorage.setItem('role_id',result.role_id);
+                let user_id  = localStorage.setItem('user_id',result.user_id);
+                window.location.href = "http://127.0.0.1/mini-classroom/welcome.php";
+               }
+             })
+          } catch (error) {
             console.error('Error:', error);
           }
       

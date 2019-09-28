@@ -4,13 +4,16 @@
 
 
 body{
-background-image: url(https://res.cloudinary.com/kngkay/image/upload/v1569408433/kngkay/Background.png);
+/* background-image: url(https://res.cloudinary.com/kngkay/image/upload/v1569408433/kngkay/Background.png); */
 height: 100%;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;  #E5E5E5; #0EAFF4;
-} 
 
+} 
+#name{
+    color:'blue';
+}
 .cover{
      padding: 10%;
      align-content: center;
@@ -78,3 +81,25 @@ button{
 
 button:hover{
     opacity: .7;
+
+}
+
+#footer1{
+    margin-top:6.8rem;
+    line-height: 0.58em;
+}
+.two{
+ font-family:'Lucida Sans';
+  padding: 20px;
+  margin-top:20px;
+  
+}
+.three{
+ font-family:'Lucida Sans';
+  padding:20px;
+  background-color: grey;
+}
+#image{
+  height: 100%;
+  width: 100%;
+}

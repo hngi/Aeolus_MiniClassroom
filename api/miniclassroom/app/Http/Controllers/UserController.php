@@ -66,14 +66,14 @@ class UserController extends Controller
 
     public function signIn(Request $request)
     {
-        // $validator = Validator::make($request->all(), [
-        //     'email'     => 'required|email',
-        //     'password'  => 'required|min:4'
-        // ]);
+        $validator = Validator::make($request->all(), [
+            'email'     => 'required|email',
+            'password'  => 'required|min:4'
+        ]);
 
-        // if($validator->fails()){
-        //     return response()->json(['error'=>$validator->errors()], 401);
-        // }
+        if($validator->fails()){
+            return response()->json(['error'=>$validator->errors()], 401);
+        }
 
         if(Auth::attempt(['email'=>$request->input('email'), 'password'=>$request->input('password')]))
         {
@@ -82,7 +82,6 @@ class UserController extends Controller
             foreach($role as $value){
                 $role_id = $value->role_id;
             }
-         
             $data = ['fullname'=>$user->fullname, 'role_id'=>$role_id, 'user_id'=>$user->id];
             return response()->json(['message'=>'Success', 'status'=>200, 'data'=>$data], 200);
         }else{
