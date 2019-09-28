@@ -4,11 +4,10 @@
 
 
 body{
-/* background-image: url(https://res.cloudinary.com/kngkay/image/upload/v1569408433/kngkay/Background.png); */
-height: 100%;
+background-image: url(https://res.cloudinary.com/kngkay/image/upload/v1569408433/kngkay/Background.png);
 background-position: center;
 background-repeat: no-repeat;
-background-size: cover;  #E5E5E5; #0EAFF4;
+background-size: cover; 
 
 } 
 #name{
@@ -22,9 +21,6 @@ background-size: cover;  #E5E5E5; #0EAFF4;
  img{
      height: 50px;
      width: 60px;
- }
- nav{
-     margin-top: 20px;
  }
  .p1{
      font-family:'Lucida Sans';
@@ -52,7 +48,9 @@ background-size: cover;  #E5E5E5; #0EAFF4;
     font-family:'Lucida Sans';
     color: #FEF9F9;
  }
-
+.mt-top{
+    margin-top:25px !important;
+}
 
 
 

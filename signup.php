@@ -108,8 +108,8 @@
                body: JSON.stringify({'fullname':fullname,'email':mail, 'password':secret, 'role':roles})
              }).then(response=>{
                 if(response.status == 200){
-                  console.log(response);
-                //   window.location.href = "http://localhost/frontend/mini%20school/classes.html";
+                  //console.log(response);
+                  window.location.href = "http://127.0.0.1/mini-classroom/index.php";
                 }
              });
           }catch(error){

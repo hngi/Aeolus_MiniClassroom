@@ -97,7 +97,10 @@
                 let fullname = localStorage.setItem('fullname',result.fullname);
                 let role_id  = localStorage.setItem('role_id',result.role_id);
                 let user_id  = localStorage.setItem('user_id',result.user_id);
-                window.location.href = "http://127.0.0.1/mini-classroom/welcome.php";
+                if(role_id == 1){
+                  window.location.href = "http://127.0.0.1/mini-classroom/teacher.php";
+                }
+                window.location.href = "http://127.0.0.1/mini-classroom/student.php";
                }
              })
           } catch (error) {
