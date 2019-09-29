@@ -30,11 +30,10 @@
                             <div class="card" style="width: 18rem;">
                                 <img class="card-img-top" src="//placehold.it/200" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">{{$course->title}}</h5>
-                                    <p class="card-text">{{$course->description}}</p>
+                                    <h5 class="card-title text-dark">{{$course->title}}</h5>
+                                    <p class="card-text text-dark">{{$course->description}}</p>
                                     <div class="d-flex align-items-end">
-                                        <a id="enrolBtn" class="btn btn-primary btn-lg" href="{{$course->url()}}">Course Details</a>
-                                        <footer class="blockquote-footer float-right">By <cite title="Source Title">{{$course->teacher->name}}</cite></footer>
+                                        <a id="enrolBtn" class="btn btn-primary btn-lg text-center" href="{{$course->url()}}">Course Details</a>
 
                                     </div>
                                 </div>
