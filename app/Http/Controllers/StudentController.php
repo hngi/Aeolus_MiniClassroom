@@ -23,11 +23,6 @@ class StudentController extends Controller
         return view('student.index', compact('courses', 'subjects'));
     }
 
-    public function enroll()
-    {
-
-        return view('student.profile');
-    }
 
     public function profile()
     {

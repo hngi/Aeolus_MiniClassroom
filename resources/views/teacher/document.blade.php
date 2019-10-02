@@ -18,8 +18,15 @@
 
 
                         <div class="col-md-10">
-                            <h3 class="my-3">Introduction</h3>
-                            <p>{{$document->intro}}</p>
+
+                            <div class="embed-responsive embed-responsive-16by9 mb-4">
+                                {!! $document->video_url !!}
+                            </div>
+
+                            <p class="p">{{$document->intro}}</p>
+                            <a href="{{url('storage').'/'.$document->document}}" class="btn btn-primary"
+                               id="download" download="{{$document->title}}" >Download Resource PDF</a>
+
 
                         </div>
 
@@ -31,11 +38,12 @@
 
                     <div class="row">
                         @foreach($related as $document)
-                            <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="col-md-2 col-sm-4 mb-4">
+
                                 <a href="/teacher{{$document->url()}}">
-                                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+                                    <img class="img-fluid" src="{{$document->video_thumbnail}}" alt="">
                                 </a>
-                                <p>{{$document->title}}</p>
+                                <p class="p">{{$document->title}}</p>
                             </div>
                         @endforeach
 
@@ -67,6 +75,8 @@
                 $('#courseTitle').text($(this).data('topic'));
                 $("#enrollModal").modal('show');
             })
+
+            document.getElementById('download').click();
         })
     </script>
 

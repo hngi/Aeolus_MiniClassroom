@@ -27,4 +27,10 @@ class Course extends Model
     {
         return '/courses/'.$this->id;
     }
+
+    public function enrolled()
+    {
+        $check = Classroom::where('course_id', $this->id)->where('user_id', auth()->id())->first();
+        return $check ? true : false;
+    }
 }

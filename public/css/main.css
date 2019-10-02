@@ -26,7 +26,7 @@ background-size: cover;  #E5E5E5; #0EAFF4;
      color: #0EAFF4;
  
  }
- p{
+ .p{
      font-family:'Lucida Sans';
      font-size: 15px;
      color: #FEF9F9;
@@ -39,7 +39,7 @@ background-size: cover;  #E5E5E5; #0EAFF4;
      padding: 5px;
  }
  
- h1,h2,h3,h4,h5,h6{
+ h1,h2,h3,h4,h6{
     font-family:'Lucida Sans';
     color: #FEF9F9;
  }

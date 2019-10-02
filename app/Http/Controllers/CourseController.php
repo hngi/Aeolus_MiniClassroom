@@ -6,6 +6,7 @@ use App\Classroom;
 use App\Course;
 use App\Document;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class CourseController extends Controller
 {
@@ -35,15 +36,21 @@ class CourseController extends Controller
         return redirect('/teacher/courses/'.$course->id);
     }
 
-    public function addDocument(Course $course)
+    public function addDocument(Course $course, Request $request)
     {
-        $course->documents()->create(
-            request()
-                ->validate(['title' => 'required',
-                    'intro' => 'required',
-                    'document' => 'required',
-                    'chapter' => 'required'])
-        );
+        $request->validate([
+                'title' => 'required',
+                'intro' => 'required',
+                'document' => 'required',
+                'video' => 'required',
+                'chapter' => 'required']);
+
+        $path = Storage::disk('public')->putFile('docs',$request->file('document'));
+        $all = $request->all();
+        $all['document'] = $path;
+        //dd($all);
+        $course->documents()->create($all);
+
         return redirect('/teacher/courses/'.$course->id);
     }
     
@@ -51,10 +58,12 @@ class CourseController extends Controller
     {
         $classroom = Classroom::firstOrCreate(
             [
-                'user_id' => auth()
+                'user_id' => auth()->id()
             ],
             [
-                'st'
+                'course_id' => request('course_id')
             ]);
+        return back();
     }
+
 }

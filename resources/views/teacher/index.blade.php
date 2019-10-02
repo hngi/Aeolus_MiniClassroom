@@ -37,10 +37,10 @@
                                     <div class="card" style="width: 18rem;">
                                         <img class="card-img-top" src="//placehold.it/200" alt="Card image cap">
                                         <div class="card-body">
-                                            <a href="/teacher{{$course->url()}}"><h5 class="card-title">{{$course->title}}</h5></a>
+                                            <a href="/teacher{{$course->url()}}"><h4 class="card-title text-dark">{{$course->title}}</h4></a>
                                             <p class="card-text">{{$course->description}}</p>
                                             <div class="text-center">
-                                                <button id="enrolBtn" class="btn btn-primary btn-lg" >Update Course</button>
+                                                <a href="/teacher{{$course->url()}}" id="enrolBtn" class="btn btn-primary btn-lg" >Update Course</a>
 
                                             </div>
                                         </div>

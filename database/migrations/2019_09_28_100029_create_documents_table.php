@@ -20,6 +20,7 @@ class CreateDocumentsTable extends Migration
             $table->string('title');
             $table->text('intro');
             $table->string('document')->nullable();
+            $table->string('video')->nullable();
             $table->timestamps();
 
             // $table->foreign('course_id')->references('id')->on('courses')->onDelete('cascade');

@@ -10,7 +10,7 @@
             <div class="modal-body" id="courseBody">
 
             </div>
-            <form action="{{route('document.add', $course->id)}}" method="POST">
+            <form action="{{route('document.add', $course->id)}}" method="POST" enctype="multipart/form-data">
                     @csrf
 
                 <div class="form-group row">
@@ -57,12 +57,26 @@
                     </div>
 
                     <div class="form-group row">
+                        <label for="description" class="col-md-4 col-form-label text-md-right">{{ __('Video URL') }}</label>
+
+                        <div class="col-md-6">
+                            <input class="form-control @error('video') is-invalid @enderror" name="video" value="{{ old('video') }}" required>
+
+                            @error('video')
+                            <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                            @enderror
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
                         <label for="type" class="col-md-4 col-form-label text-md-right">{{ __('Upload Document') }}</label>
                         <div class="col-md-6">
                         <div class="input-group mb-3">
                             <div class="custom-file">
-                                <input name="document" type="file" class="custom-file-input" id="inputGroupFile01">
-                                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                <input name="document" type="file" class="custom-file-input" id="document">
+                                <label class="custom-file-label" for="document">Choose file</label>
                             </div>
                         </div>
                         </div>

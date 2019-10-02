@@ -39,7 +39,7 @@
 
                         <div class="col-md-4">
                             <h3 class="my-3">Course Content</h3>
-                            <p>{{$course->description}}</p>
+                            <p class="p">{{$course->description}}</p>
                             <h3 class="my-3">Course Details</h3>
                             <ul class="list-group">
                                 @foreach($course->documents as $document)
@@ -60,7 +60,7 @@
                                 <a href="/teacher{{$course->url()}}">
                                     <img class="img-fluid" src="http://placehold.it/500x300" alt="">
                                 </a>
-                                <p>{{$course->title}}</p>
+                                <p class="p">{{$course->title}}</p>
                             </div>
                         @endforeach
 
