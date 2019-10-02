@@ -32,6 +32,23 @@
                 </div>
                 <!-- /.row -->
 
+<div class="row mt-4">
+    <div class="col-md-10 text-center">
+        @if($document->course->enrolled())
+            @if($document->course->progress()->where('chapter_id', $document->chapter)->first())
+                <button type="button" class="btn btn-success btn-lg btn-block">You have Completed This Chapter</button>
+            @else
+            <form method="POST" action="{{route('document.completed', $document->id)}}">
+                @csrf
+                <input type="hidden" value="{{$document->id}}">
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Mark This Chapter as Completed</button>
+            </form>
+            @endif
+        @endif
+    </div>
+</div>
+
+
                 <!-- Related Projects Row -->
                 <h3 class="my-4">Other Resources</h3>
 
@@ -40,8 +57,8 @@
                     <div class="col-md-3 col-sm-6 mb-4">
                         <a href="{{$document->url()}}">
                             <img class="img-fluid" src="{{$document->video_thumbnail}}" alt="">
-                        </a>
                         <p class="p">{{$document->title}}</p>
+                        </a>
                     </div>
                     @endforeach
 

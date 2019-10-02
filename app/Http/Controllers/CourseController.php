@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Classroom;
 use App\Course;
 use App\Document;
+use App\Progress;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -56,14 +57,27 @@ class CourseController extends Controller
     
     public function enroll()
     {
-        $classroom = Classroom::firstOrCreate(
+        Classroom::firstOrCreate(
             [
-                'user_id' => auth()->id()
-            ],
-            [
+                'user_id' => auth()->id(),
                 'course_id' => request('course_id')
             ]);
         return back();
+    }
+
+    public function completed(Document $document)
+    {
+        Progress::create([
+            'student_id' => auth()->id(),
+            'course_id' => $document->course_id,
+            'chapter_id' => $document->chapter
+        ]);
+        return back();
+    }
+
+    public function students(Course $course)
+    {
+        return view('teacher.students', compact('course'));
     }
 
 }

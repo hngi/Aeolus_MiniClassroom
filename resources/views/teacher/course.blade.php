@@ -19,6 +19,8 @@
                     <div class="row">
 
                         <div class="col-md-10">
+
+                            <a href="{{route('course.students', $course->id)}}" class="btn btn-success btn-lg">View Enrolled Students</a>
                         </div>
                         <div class="col-md-2 float-right">
                             <button id="addResource" class="btn btn-primary btn-lg">Add Course Resources</button>

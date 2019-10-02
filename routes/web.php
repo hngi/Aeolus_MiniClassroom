@@ -40,6 +40,8 @@ Route::group(['prefix' => 'courses', 'middleware' => ['auth']], function () {
     Route::get('/{course}/resources/{document}', 'CourseController@document')->name('document.show');
     Route::post('/', 'CourseController@save')->name('course.add');
     Route::post('/{course}/document', 'CourseController@addDocument')->name('document.add');
+    Route::get('/{course}/students', 'CourseController@students')->name('course.students');
+    Route::post('/{document}/completed', 'CourseController@completed')->name('document.completed');
 });
 
 

@@ -33,4 +33,9 @@ class Course extends Model
         $check = Classroom::where('course_id', $this->id)->where('user_id', auth()->id())->first();
         return $check ? true : false;
     }
+
+    public function progress()
+    {
+        return Progress::where('course_id', $this->id)->where('student_id', auth()->id())->get();
+    }
 }

@@ -50,6 +50,8 @@
                 </div>
                 <!-- /.row -->
 
+
+
                 <!-- Related Projects Row -->
                 <h3 class="my-4">Related Courses</h3>
 

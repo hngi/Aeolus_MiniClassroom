@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Classroom extends Model
 {
     protected $guarded = [];
-    public function students()
+    public function student()
     {
-        return $this->hasMany('App\User', 'user_id');
+        return $this->belongsTo('App\User', 'user_id');
     }
 
     public function course()
