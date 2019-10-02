@@ -57,7 +57,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="description" class="col-md-4 col-form-label text-md-right">{{ __('Video URL') }}</label>
+                        <label for="description" class="col-md-4 col-form-label text-md-right">{{ __('Video URL') }}  <small class="text-muted"> (Youtube or Vimeo)</small></label>
 
                         <div class="col-md-6">
                             <input class="form-control @error('video') is-invalid @enderror" name="video" value="{{ old('video') }}" required>
@@ -71,7 +71,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="type" class="col-md-4 col-form-label text-md-right">{{ __('Upload Document') }}</label>
+                        <label for="type" class="col-md-4 col-form-label text-md-right">{{ __('Upload Document') }}  <small class="text-muted"> (PDF or Doc)</small></label>
                         <div class="col-md-6">
                         <div class="input-group mb-3">
                             <div class="custom-file">
