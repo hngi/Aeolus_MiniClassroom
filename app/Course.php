@@ -1,7 +1,7 @@
 <?php
-
+//To create the teacher function to check the enrolled students and their progress 
 namespace App;
-
+//Illuminate-Database-Eloquent-Model;
 use Illuminate\Database\Eloquent\Model;
 
 class Course extends Model

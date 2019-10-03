@@ -13,7 +13,7 @@ class CourseController extends Controller
 {
     public function index()
     {
-        //
+        //$related=course::has('documents')
     }
 
     public function show(Course $course)
