@@ -14,8 +14,8 @@ Project is created with:
 ### Features
 	Simple and easy to use interface.
 	Account login.
-	Teachers can easily create and update course and course items.
-	Students have access to course outline, 
+	Teachers can easily create, update course,upload teaching materials and check the progress of the students. 
+	Students have access to course outline, download course materials and enrollment, 
 	assignments, projects and resources on the go.
 
 ### To-do list
