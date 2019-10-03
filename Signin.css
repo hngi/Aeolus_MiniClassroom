@@ -1,0 +1,38 @@
+body {
+    background-image: url("https://res.cloudinary.com/chux/image/upload/v1569589371/Sign_Up_Page_1_c4sqys.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container { 
+width: 400px;
+height: 500px;
+display: block;
+text-align: center;
+margin: 8% auto 0;
+border: 3px solid #fcfcfc;
+border-radius: 10px;
+
+}
+.form-control {
+    font-style: italic;
+    background-color: #FBFCFD;
+}
+h1 {
+    font-size: 28px;
+    margin-top: 100px;
+    font-weight: 500;
+    -webkit-text-fill-color: white;
+    
+}
+.form {
+    margin-top: 30px;
+}
+.btn btn-primary {
+    border-radius: 15px;
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+}
+#CHECK, #forgotten {
+    -webkit-text-fill-color: white;
+}
