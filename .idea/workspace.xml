@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3cb2b2a-8e78-4267-8913-a03571ed6ca6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/FAQ.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/faq1.blade.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/database/migrations/2019_10_04_073409_add_google_id_column.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FAQ.css" afterPath="$PROJECT_DIR$/FAQ.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/services.php" afterPath="$PROJECT_DIR$/config/services.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/faq.blade.php" afterPath="$PROJECT_DIR$/resources/views/faq.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,11 +18,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="faq1.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="faq1.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/faq1.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1554">
-              <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+            <state relative-caret-position="273">
+              <caret line="62" column="20" lean-forward="true" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <marker date="1570183878585" expanded="true" signature="243:265" ph="..." />
@@ -54,11 +46,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FAQ1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FAQ1.html">
+      <file leaf-file-name="2014_10_12_000000_create_users_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            <state relative-caret-position="357">
+              <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseSeeder.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -87,16 +109,6 @@
                 <marker date="1570182516837" expanded="true" signature="7804:7819" ph="..." />
                 <marker date="1570182516837" expanded="true" signature="8737:8752" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/app.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
-              <caret line="229" column="66" lean-forward="false" selection-start-line="229" selection-start-column="66" selection-end-line="229" selection-end-column="66" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -144,16 +156,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="327">
               <caret line="141" column="17" lean-forward="false" selection-start-line="141" selection-start-column="17" selection-end-line="141" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="31" column="19" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -241,6 +243,9 @@
         <option value="$PROJECT_DIR$/FAQ.css" />
         <option value="$PROJECT_DIR$/public/css/FAQ.css" />
         <option value="$PROJECT_DIR$/resources/views/faq1.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -597,7 +602,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../birdboard" />
-    <property name="SearchEverywhereHistoryKey" value="app&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/resources/views/layouts/app.blade.php&#10;faq&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/FAQ.css&#10;main&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/public/css/main.css&#10;welc&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/resources/views/welcome.blade.php&#10;faq.c&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/FAQ.css&#10;faq1&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/FAQ1.html&#10;hom&#9;null&#9;null&#10;web&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/routes/web.php&#10;url&#9;null&#9;null&#10;app.php&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/config/app.php&#10;service&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/config/services.php&#10;logincon&#9;null&#9;null&#10;login&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/resources/views/auth/login.blade.php&#10;user&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/app/User.php&#10;stude&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/app/Http/Controllers/StudentController.php&#10;courseco&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/app/Http/Controllers/CourseController.php&#10;add&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/resources/views/teacher/modals/add-document.blade.php&#10;class&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/app/Classroom.php&#10;course&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/app/Course.php&#10;lass&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/app/Classroom.php&#10;larave&#9;null&#9;null&#10;Docu&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/app/Document.php&#10;.env&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/.env&#10;coucon&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/app/Http/Controllers/CourseController.php&#10;regist&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/mini/resources/views/auth/register.blade.php&#10;cou&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/mini/app/Http/Controllers/CourseController.php&#10;teach&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/mini/app/Http/Controllers/TeacherController.php&#10;tea&#9;null&#9;null&#10;brea&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/mini/config/breadcrumbs.php&#10;classro&#9;null&#9;null&#10;student&#9;null&#9;null&#10;coure&#9;null&#9;null&#10;coursec&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/mini/app/Http/Controllers/CourseController.php&#10;docu&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/mini/app/Document.php&#10;show&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/mini/resources/views/courses/show.blade.php&#10;docum&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="gitig&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/.gitignore&#10;.env&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/.env&#10;seed&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/database/seeds/DatabaseSeeder.php&#10;app&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/resources/views/layouts/app.blade.php&#10;faq&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/FAQ.css&#10;main&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/public/css/main.css&#10;welc&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/resources/views/welcome.blade.php&#10;faq.c&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/FAQ.css&#10;faq1&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/FAQ1.html&#10;hom&#9;null&#9;null&#10;web&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/routes/web.php&#10;url&#9;null&#9;null&#10;app.php&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/config/app.php&#10;service&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/config/services.php&#10;logincon&#9;null&#9;null&#10;login&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/resources/views/auth/login.blade.php&#10;user&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/app/User.php&#10;stude&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/app/Http/Controllers/StudentController.php&#10;courseco&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/app/Http/Controllers/CourseController.php&#10;add&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/resources/views/teacher/modals/add-document.blade.php&#10;class&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/app/Classroom.php&#10;course&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/app/Course.php&#10;lass&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/app/Classroom.php&#10;larave&#9;null&#9;null&#10;Docu&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/app/Document.php&#10;coucon&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/aeolus-miniclass/app/Http/Controllers/CourseController.php&#10;regist&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/mini/resources/views/auth/register.blade.php&#10;cou&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/mini/app/Http/Controllers/CourseController.php&#10;teach&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/mini/app/Http/Controllers/TeacherController.php&#10;tea&#9;null&#9;null&#10;brea&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/mini/config/breadcrumbs.php&#10;classro&#9;null&#9;null&#10;student&#9;null&#9;null&#10;coure&#9;null&#9;null&#10;coursec&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/mini/app/Http/Controllers/CourseController.php&#10;docu&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/mini/app/Document.php&#10;show&#9;FILE&#9;file://C:/Users/PG_SCHOOL_1/Code/mini/resources/views/courses/show.blade.php&#10;docum&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -700,12 +705,12 @@
       <option name="presentableId" value="Default" />
       <updated>1569702500223</updated>
       <workItem from="1569702505161" duration="12651000" />
-      <workItem from="1570030862423" duration="32205000" />
+      <workItem from="1570030862423" duration="33879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44856000" />
+    <option name="totallyTimeSpent" value="46530000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="2" width="1932" height="1036" extended-state="0" />
@@ -742,22 +747,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes/breadcrumbs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/UserFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -803,14 +792,6 @@
             <marker date="1569748936236" expanded="true" signature="5527:5548" ph="..." />
             <marker date="1569748936236" expanded="true" signature="5986:6009" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1144,26 +1125,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-147">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_28_172015_create_classrooms_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_04_073409_add_google_id_column.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -1367,10 +1332,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_04_073409_add_google_id_column.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/faq1.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1554">
-          <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+        <state relative-caret-position="273">
+          <caret line="62" column="20" lean-forward="true" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <marker date="1570183878585" expanded="true" signature="243:265" ph="..." />
@@ -1390,6 +1363,38 @@
             <marker date="1570183878585" expanded="true" signature="2828:2838" ph="..." />
             <marker date="1570183878585" expanded="true" signature="2906:2917" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
