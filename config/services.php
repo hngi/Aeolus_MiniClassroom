@@ -36,7 +36,7 @@ return [
     'google' => [
         'client_id' => 'http://158237961024-b4glgslo4d7tfl1j081rag5vea0k10gl.apps.googleusercontent.com/',
         'client_secret' => 'qd2khPoXU14epBy9knzwJrA_ ',
-        'redirect' => 'https://team10hex.000webhostapp.com/auth/google/callback',
+        'redirect' => 'http://206.81.13.104/portal/mini-classroom/auth/google/callback',
     ],
 
 ];
