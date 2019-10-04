@@ -4,6 +4,9 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8" style="min-height: 500px;">
+        <a href="{{ url('auth/google') }}" class="btn btn-lg btn-primary btn-block">
+          <strong>Login With Google</strong>
+          </a> 
             <div style="min-height: 150px"></div>
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
