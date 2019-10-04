@@ -26,6 +26,14 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/faq', function (){
+    return view('faq');
+});
+
+Route::get('/faq1', function (){
+    return view('faq1');
+});
+
 
 Route::group(['prefix' => 'student', 'middleware' => ['auth']], function () {
     Route::get('/', 'StudentController@index')->name('student.index');
@@ -53,3 +61,5 @@ Route::group(['prefix' => 'teacher', 'middleware' => ['auth']], function () {
 });
 
 
+Route::get('auth/google', 'Auth\LoginController@redirectToGoogle');
+Route::get('auth/google/callback', 'Auth\LoginController@handleGoogleCallback');

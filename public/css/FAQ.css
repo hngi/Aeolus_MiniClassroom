@@ -1,22 +1,24 @@
 body {
+    background-image: url(https://res.cloudinary.com/kngkay/image/upload/v1569408433/kngkay/Background.png);
+    /*height: 100%;*/
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    background-color: #193030;
+    color: #FEF9F9;
 }
 .select {
     margin-top:40px;
     text-align: center;
 }
 #teacher {
-    padding: 100px;
+    padding: 0px;
 }
 h1 {
     text-align: center;
 }
 .How-student {
     border: 2px solid;
-    box-shadow: 2px 2px; 
+    box-shadow: 2px 2px;
     width: 800px;
     margin: 0 auto;
     position: relative;
@@ -35,7 +37,7 @@ h1 {
     width: 800px;
     margin: 0 auto;
     position: relative;
-    box-shadow: 2px 2px; 
+    box-shadow: 2px 2px;
     padding-left: 20px;
     padding-right: 10px;
 }
@@ -51,15 +53,15 @@ h1 {
     width: 800px;
     margin: 0 auto;
     position: relative;
-    box-shadow: 2px 2px; 
+    box-shadow: 2px 2px;
     padding-left: 20px;
-        padding-right: 10px;
+    padding-right: 10px;
 }
 @media (max-width:840px){
     .pickcourse {
         width: auto;
         margin: 0 auto;
-        
+
     }
 }
 #asked {
@@ -71,7 +73,7 @@ li {
 }
 .corsemain {
     border: 2px solid;
-    box-shadow: 2px 2px; 
+    box-shadow: 2px 2px;
     width: 800px;
     margin: 0 auto;
     position: relative;
@@ -86,62 +88,62 @@ li {
     }
 
 }
-.assignment { 
-border: 2px solid;
-box-shadow: 2px 2px; 
-width: 800px;
-margin: 0 auto;
-position: relative;
-padding-left: 20px;
-padding-right: 10px;
-top: 40px;
-}
-@media (max-width:840px){
 .assignment {
-    width: auto;
+    border: 2px solid;
+    box-shadow: 2px 2px;
+    width: 800px;
     margin: 0 auto;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 10px;
+    top: 40px;
 }
+@media (max-width:840px){
+    .assignment {
+        width: auto;
+        margin: 0 auto;
+    }
 }
 .Howcontacr {
     border: 2px solid;
-box-shadow: 2px 2px; 
-width: 800px;
-margin: 0 auto;
-position: relative;
-padding-left: 20px;
-padding-right: 10px;
-top: 30px;
+    box-shadow: 2px 2px;
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 10px;
+    top: 30px;
 }
 @media (max-width:840px){
-.Howcontacr {
-    width: auto;
-    margin: 0 auto;
-}
+    .Howcontacr {
+        width: auto;
+        margin: 0 auto;
+    }
 }
 .Codindexer {
     border: 2px solid;
-box-shadow: 2px 2px; 
-width: 800px;
-margin: 0 auto;
-position: relative;
-padding-left: 20px;
-padding-right: 10px;
-top: 40px;
-padding-bottom:  20px;
+    box-shadow: 2px 2px;
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 10px;
+    top: 40px;
+    padding-bottom:  20px;
 }
 @media (max-width:840px){
-.Codindexer {
-    width: auto;
-    margin: 0 auto;
+    .Codindexer {
+        width: auto;
+        margin: 0 auto;
 
-}
+    }
 }
 #stud {
     -webkit-text-fill-color: black;
     font-size: 20px;
     margin-top: 20px;
-    
-    
+
+
 }
 
 @media (max-width:840px){
@@ -153,12 +155,12 @@ padding-bottom:  20px;
 
 h3 {
     font-size: 24px;
-    font-weight: 700,
+    font-weight: 700;
 }
 .select {
     height: 140px;
 }
 a #stud :hover {
-  color:   #FEF9F9;
+    color:   #FEF9F9;
 }
 

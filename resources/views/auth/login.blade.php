@@ -4,9 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8" style="min-height: 500px;">
-        <a href="{{ url('auth/google') }}" class="btn btn-lg btn-primary btn-block">
-          <strong>Login With Google</strong>
-          </a> 
+
             <div style="min-height: 150px"></div>
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
@@ -57,6 +55,9 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
+                                <a href="{{ url('auth/google') }}" class="btn btn-outline-danger">
+                                    <strong>Login With Google</strong>
+                                </a>
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
                                 </button>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Student Account</title>
+    <title>Teacher Account</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
@@ -61,28 +61,26 @@
     </div>
 </nav>
 <div class="select">
-
     <div><a id="stud" href="{{url('faq')}}">Student Account</a></div><div id="teacher"><a id="stud" href="{{url('faq1')}}">Teacher Account</a></div>
 </div>
-
 <h1 id="asked">Freqently Asked Question</h1>
 <div class="container">
     <div class="How-student">
-        <h3>How to sign up as a student</h3>
-        <p>On the Aeolus MiniClassroom entry page</p>
+        <h3>How to sign up as a teacher</h3>
+        <p>On the Aeolus MininClassroom entry page</p>
         <ul>
             <li>Click on Register</li>
             <li>Enter the required fields</li>
-            <li>select register as student</li>
+            <li>Select register as teacher</li>
         </ul>
-        <p>When you click on register button you student membership on Aeolus MiniClassroom is activated
+        <p>When you click on register button you student membership on Aeolus MininClassroom is activated
             and you will be redirected to your home page where you can choose any course to enroll.
             Remember all field are mandatory.
         </p>
     </div>
     <div class="how-password">
         <h3>How to Login and retrieve Password</h3>
-        <p>On the Aeolus MiniClassroom entry page Navbar</p>
+        <p>On the Aeolus MininClassroom entry page Navbar</p>
         <ul>
             <li>Click on Login on the top menu</li>
             <li>Fill out Email address and Password used during registeration</li>
@@ -97,28 +95,48 @@
         </ul>
     </div>
     <div class="pickcourse">
-        <h3>How to pick a course</h3>
-        <p>Browse our course list to find something that you did like to learn about.
-            We have diverse range of subjects and are always adding more. Courses vary in length,
-            learning mode which include PDF and video. You might want to choose a learning mode that
-            is most suitable for you. also ypu can click on course details to review the course before joining the class.
+        <h3>How to create course</h3>
+        <p>Click on Add course on your dash board, which will then redirect you to your course main page.</p>
+        <p>The main course page consist of three text field namely course title, course description and course subject.
+            For each text field, fill apprioprately as below</p>
+        <ul>
+            <li>Course Title: Choose the desired title suitable for your course, e.g. differential equation.</li>
+            <li>Course Description: This section describes what tthe course entails or a brief summary of the course,
+                e.g. In this course we will be discusing Both first and second order differentiation.
+            </li>
+            <li>Course Subject: Here we select the subject for our course from the already defined subject.</li>
+        </ul>
+        <p>Clicking save course button will create your course and class under the selected subject. </p>
+    </div>
+    <div class="corsemain">
+        <h3>How to create class discussion</h3>
+        <p>The teacher can create discussion among the classes from the create discussion button
+            on the main discussion page under each class. This action will bring out a pop-up menu asking to fill out the following:
+        <ul>
+            <li>Title: The title of discussion</li>
+            <li>Description:This field can be used to add some more information about the discussion</li>
+            <li>Upload, MyFiles and Link: The teacher can use thes links to add supportive files or
+                links to the discussion
+            </li>
+            <li>Save button will create your discussion</li>
+        </ul>
         </p>
+
     </div>
-    <div class="Howcontacr">
-        <h3>How to contact your Course teacher</h3>
-        <p>Aeolus teachers works hard to provide high quality and compelling course. If you have any question or
-            comments about a course you are enrolled in, you can contact the instructor via direct message or the Q&A.
-            Please note: This service is not yet available.
+    <div class="assignment">
+        <h3>How to create assignment</h3>
+        <p>Teachers can create online assignment for their student by folloeing the step below.
+            You start by first clicking on assignment button. A pop up window will open and ask you to fill out the related field
+        <ul>
+            <li>Assignment Name: The name of your assignment</li>
+            <li>Description: This is an optional field where you can add details of your assignment </li>
+            <li>Due Date and Time: Type in the deadline for this assignment</li>
+        </ul>
         </p>
+        <p>Note: This is not available yet.</p>
     </div>
-    <div class="Codindexer">
-        <h3>What are coding exercise</h3>
-        <p>Coding exercises are an interactive tool that teachers can add to their courses. You Enter
-            code directley onto the page and can run the function without switching programs or screens.The exercise can also provide
-            hints when you've made an entry error, so you can correct the mistake and proceed with your coding. </p>
-    </div>
+
 </div>
-
-
+<div class="clearfix"></div>
 </body>
 </html>
