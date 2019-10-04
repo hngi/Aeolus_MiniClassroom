@@ -18,6 +18,7 @@ class CreateCoursesTable extends Migration
             $table->bigInteger('user_id');
             $table->bigInteger('subject_id');
             $table->string('title');
+            $table->string('image');
             $table->text('description');
             $table->timestamps();
 

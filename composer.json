@@ -12,6 +12,7 @@
         "davejamesmiller/laravel-breadcrumbs": "5.3.0",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.8.*",
+        "laravel/socialite": "^4.2",
         "laravel/tinker": "^1.0",
         "merujan99/laravel-video-embed": "dev-master"
     },

@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     if (!auth()->user()) {
-        return redirect('login');
+        return view('welcome');
     } else {
         if (auth()->user()->type === 1) {
             return redirect('teacher');
@@ -51,3 +51,5 @@ Route::group(['prefix' => 'teacher', 'middleware' => ['auth']], function () {
     Route::get('/profile', 'StudentController@profile')->name('teacher.profile');
     Route::get('/courses/{course}/resources/{document}', 'TeacherController@document')->name('teacher.document');
 });
+
+

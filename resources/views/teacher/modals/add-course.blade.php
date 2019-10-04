@@ -10,7 +10,7 @@
             <div class="modal-body" id="courseBody">
 
             </div>
-            <form action="{{route('course.add')}}" method="POST">
+            <form action="{{route('course.add')}}" method="POST" enctype="multipart/form-data">
                     @csrf
 
                     <div class="form-group row">
@@ -40,6 +40,18 @@
                             @enderror
                         </div>
                     </div>
+
+                <div class="form-group row">
+                    <label for="type" class="col-md-4 col-form-label text-md-right">{{ __('Course Image') }}</label>
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                                <input name="image" type="file" class="custom-file-input" id="document">
+                                <label class="custom-file-label" for="document">Choose file</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                     <div class="form-group row">
                         <label for="type" class="col-md-4 col-form-label text-md-right">{{ __('Course Subject') }}</label>

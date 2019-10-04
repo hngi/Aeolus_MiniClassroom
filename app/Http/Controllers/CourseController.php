@@ -28,12 +28,19 @@ class CourseController extends Controller
         return view('courses.document', compact('document','related'));
     }
 
-    public function save()
+    public function save(Request $request)
     {
-        $course = auth()->user()->courses()->create(request()
-            ->validate(['title' => 'required',
+        $request->validate(['title' => 'required',
                 'subject_id' => 'required',
-                'description' => 'required']));
+                'image' => 'required',
+                'description' => 'required']);
+
+        $path = Storage::disk('public')->putFile('courses',$request->file('image'));
+        $all = $request->all();
+        $all['image'] = $path;
+
+        $course = auth()->user()->courses()->create($all);
+
         return redirect('/teacher/courses/'.$course->id);
     }
 
