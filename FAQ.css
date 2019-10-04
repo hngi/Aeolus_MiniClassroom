@@ -1,0 +1,164 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #193030;
+}
+.select {
+    margin-top:40px;
+    text-align: center;
+}
+#teacher {
+    padding: 100px;
+}
+h1 {
+    text-align: center;
+}
+.How-student {
+    border: 2px solid;
+    box-shadow: 2px 2px; 
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+@media (max-width:840px){
+    .How-student {
+        width: auto;
+        margin: 0 auto;
+    }
+}
+.how-password {
+    border: 2px solid;
+    top: 10px;
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 2px 2px; 
+    padding-left: 20px;
+    padding-right: 10px;
+}
+@media (max-width:840px){
+    .how-password {
+        width: auto;
+        margin: 0 auto;
+    }
+}
+.pickcourse {
+    border: 2px solid;
+    top: 20px;
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 2px 2px; 
+    padding-left: 20px;
+        padding-right: 10px;
+}
+@media (max-width:840px){
+    .pickcourse {
+        width: auto;
+        margin: 0 auto;
+        
+    }
+}
+#asked {
+    -webkit-text-fill-color: #FEF9F9;
+}
+
+li {
+    list-style: circle;
+}
+.corsemain {
+    border: 2px solid;
+    box-shadow: 2px 2px; 
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 10px;
+    top: 30px;
+}
+@media (max-width:840px){
+    .corsemain {
+        width: auto;
+        margin: 0 auto;
+    }
+
+}
+.assignment { 
+border: 2px solid;
+box-shadow: 2px 2px; 
+width: 800px;
+margin: 0 auto;
+position: relative;
+padding-left: 20px;
+padding-right: 10px;
+top: 40px;
+}
+@media (max-width:840px){
+.assignment {
+    width: auto;
+    margin: 0 auto;
+}
+}
+.Howcontacr {
+    border: 2px solid;
+box-shadow: 2px 2px; 
+width: 800px;
+margin: 0 auto;
+position: relative;
+padding-left: 20px;
+padding-right: 10px;
+top: 30px;
+}
+@media (max-width:840px){
+.Howcontacr {
+    width: auto;
+    margin: 0 auto;
+}
+}
+.Codindexer {
+    border: 2px solid;
+box-shadow: 2px 2px; 
+width: 800px;
+margin: 0 auto;
+position: relative;
+padding-left: 20px;
+padding-right: 10px;
+top: 40px;
+padding-bottom:  20px;
+}
+@media (max-width:840px){
+.Codindexer {
+    width: auto;
+    margin: 0 auto;
+
+}
+}
+#stud {
+    -webkit-text-fill-color: black;
+    font-size: 20px;
+    margin-top: 50px;
+    
+    
+}
+
+@media (max-width:840px){
+    #stud, #tech {
+        padding: 0px;
+    }
+}
+
+
+h3 {
+    font-size: 24px;
+    font-weight: 700,
+}
+.select {
+    height: 140px;
+}
+a #stud :hover {
+  color:   #FEF9F9;
+}
+
