@@ -60,9 +60,10 @@
                         @foreach($related as $course)
                             <div class="col-md-3 col-sm-6 mb-4">
                                 <a href="/teacher{{$course->url()}}">
-                                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-                                </a>
+                                    <img class="img-fluid" src="{{url('storage').'/'.$course->image}}" alt="">
+
                                 <p class="p">{{$course->title}}</p>
+                                </a>
                             </div>
                         @endforeach
 

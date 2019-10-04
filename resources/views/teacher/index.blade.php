@@ -35,7 +35,7 @@
                                 <div class="col-sm-3 mb-3">
 
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="//placehold.it/200" alt="Card image cap">
+                                        <img class="card-img-top" src="{{url('storage').'/'.$course->image}}" alt="Card image cap">
                                         <div class="card-body">
                                             <a href="/teacher{{$course->url()}}"><h4 class="card-title text-dark">{{$course->title}}</h4></a>
                                             <p class="card-text">{{$course->description}}</p>
