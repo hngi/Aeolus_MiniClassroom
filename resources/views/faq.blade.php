@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Student Account</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="{{ asset('js/app.js') }}" defer></script>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/FAQ.css')}}" />

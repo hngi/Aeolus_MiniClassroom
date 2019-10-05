@@ -7,7 +7,7 @@
     <div class="row justify-content-center">
         <div class="col-md-11">
             <div class="container">
-                <a href="{{$document->course->url()}}">{{ Breadcrumbs::render('course',$document->course->id) }}</a>
+                <a href="{{url($document->course->url())}}">{{ Breadcrumbs::render('course',$document->course->id) }}</a>
                 <!-- Portfolio Item Heading -->
                 <h1 class="my-4">{{$document->title}}
                     <small></small>
@@ -55,7 +55,7 @@
                 <div class="row">
                     @foreach($related as $document)
                     <div class="col-md-3 col-sm-6 mb-4">
-                        <a href="{{$document->url()}}">
+                        <a href="{{url($document->url())}}">
                             <img class="img-fluid" src="{{$document->video_thumbnail}}" alt="">
                         <p class="p">{{$document->title}}</p>
                         </a>

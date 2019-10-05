@@ -37,10 +37,10 @@
                                     <div class="card" style="width: 18rem;">
                                         <img class="card-img-top" src="{{url('storage').'/'.$course->image}}" alt="Card image cap">
                                         <div class="card-body">
-                                            <a href="/teacher{{$course->url()}}"><h4 class="card-title text-dark">{{$course->title}}</h4></a>
+                                            <a href="{{url("/teacher").$course->url()}}"><h4 class="card-title text-dark">{{$course->title}}</h4></a>
                                             <p class="card-text">{{$course->description}}</p>
                                             <div class="text-center">
-                                                <a href="/teacher{{$course->url()}}" id="enrolBtn" class="btn btn-primary btn-lg" >Update Course</a>
+                                                <a href="{{url("/teacher").$course->url()}}" id="enrolBtn" class="btn btn-primary btn-lg" >Update Course</a>
 
                                             </div>
                                         </div>

@@ -45,7 +45,7 @@
                             <h3 class="my-3">Course Details</h3>
                             <ul class="list-group">
                                 @foreach($course->documents as $document)
-                                    <a href="/teacher{{$document->url()}}"><li class="list-group-item mb-2">{{$document->title}}</li></a>
+                                    <a href="{{url("/teacher").$document->url()}}"><li class="list-group-item mb-2">{{$document->title}}</li></a>
                                 @endforeach
                             </ul>
                         </div>
@@ -59,7 +59,7 @@
                     <div class="row">
                         @foreach($related as $course)
                             <div class="col-md-3 col-sm-6 mb-4">
-                                <a href="/teacher{{$course->url()}}">
+                                <a href="{{url("/teacher").$course->url()}}">
                                     <img class="img-fluid" src="{{url('storage').'/'.$course->image}}" alt="">
 
                                 <p class="p">{{$course->title}}</p>

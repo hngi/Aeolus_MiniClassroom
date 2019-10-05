@@ -33,7 +33,7 @@
                                     <h5 class="card-title text-dark">{{$course->title}}</h5>
                                     <p class="card-text text-dark">{{$course->description}}</p>
                                     <div class="d-flex align-items-end">
-                                        <a id="enrolBtn" class="btn btn-primary btn-lg text-center" href="{{$course->url()}}">Course Details</a>
+                                        <a id="enrolBtn" class="btn btn-primary btn-lg text-center" href="{{url($course->url())}}">Course Details</a>
 
                                     </div>
                                 </div>
