@@ -3,7 +3,7 @@
 @section('content')
 
 
-<div class="container-fluid">
+<div class="container-fluid" style="background-color: #6497b1;">
     <div class="row justify-content-center">
         <div class="col-md-11">
             <div class="container">
@@ -18,7 +18,7 @@
 
 
 
-                    <div class="col-md-10">
+                    <div class="col-md-10" style="color: #3da4ab;">
 
                         <div class="embed-responsive embed-responsive-16by9 mb-4">
                             {!! $document->video_url !!}
@@ -26,7 +26,7 @@
 
                         <p class="p">{{$document->intro}}</p>
                         <a href="{{url('storage').'/'.$document->document}}" class="btn btn-primary"
-                           id="download" download="{{$document->title}}" >Download Resource PDF</a>
+                           id="download" download="{{$document->title}}" >Download PDF Copy</a>
                     </div>
 
                 </div>
@@ -50,7 +50,7 @@
 
 
                 <!-- Related Projects Row -->
-                <h3 class="my-4">Other Resources</h3>
+                <h3 class="my-4" style="color: #3da4ab">More Resources</h3>
 
                 <div class="row">
                     @foreach($related as $document)

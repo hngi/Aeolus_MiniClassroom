@@ -2,12 +2,12 @@
 
 @section('content')
 
-<div class="container-fluid">
+<div class="container-fluid" style="backgroundcolor: #6497b1">
     <div class="row justify-content-center">
         <div class="col-md-11">
             <div class="container">
                 @if($course->enrolled())
-                    <button type="submit" class="btn btn-success btn-lg">Enrolled</button>
+                    <button type="submit" class="btn btn-success btn-lg" style="color: #008744;">Enrolled</button>
                     @if($course->classroom->count() > 0)
                         <p class="p">{{$course->classroom->count()}} already enrolled</p>
                     @endif
@@ -15,7 +15,7 @@
                 <form method="POST" action="{{route('student.enroll')}}">
                     @csrf
                     <input type="hidden" name="course_id" value="{{$course->id}}">
-                    <button type="submit" class="btn btn-primary btn-lg">Enroll For Free</button>
+                    <button type="submit" class="btn btn-primary btn-lg" style="color: #008744;">Enroll For Free</button>
                     @if($course->classroom->count() > 0)
                     <p class="p">{{$course->classroom->count()}} student enrolled</p>
                         @endif
