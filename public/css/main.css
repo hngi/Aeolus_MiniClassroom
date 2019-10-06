@@ -44,6 +44,28 @@ background-size: cover;
     color: #FEF9F9;
  }
 
+        /* Extra small devices (phones, 600px and down) */
 
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        height: 100%;
+    }
+    .navbar>.container {
+        order: 3;
+        margin-top: 10px;
+        margin: 5px margin-bottom: 15px font-size: 1.5em width: 100%
+    }
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        .navbar {
+            flex-direction: column;
+            height: 100%;
+        }
+        .navbar>.container {
+            order: 3;
+            margin-top: 10px;
+            margin: 5px margin-bottom: 15px font-size: 1.5em width: 100%
+        }
 
 
