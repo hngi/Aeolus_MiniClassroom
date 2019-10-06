@@ -44,7 +44,8 @@ background-size: cover;
     color: #FEF9F9;
  }
 
-        /* Extra small devices (phones, 600px and down) */
+       
+/* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
     .navbar {
@@ -53,6 +54,11 @@ background-size: cover;
     }
     .navbar>.container {
         order: 3;
+        margin-top: 10px;
+        margin: 5px margin-bottom: 15px font-size: 1.5em width: 100%
+    }
+    .navbar-toggler {
+        order: 1;
         margin-top: 10px;
         margin: 5px margin-bottom: 15px font-size: 1.5em width: 100%
     }
@@ -67,5 +73,8 @@ background-size: cover;
             margin-top: 10px;
             margin: 5px margin-bottom: 15px font-size: 1.5em width: 100%
         }
-
-
+        .navbar-toggler {
+            order: 1;
+            margin-top: 10px;
+            margin: 5px margin-bottom: 15px font-size: 1.5em width: 100%
+        }
